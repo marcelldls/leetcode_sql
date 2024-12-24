@@ -1,4 +1,7 @@
+# Write your MySQL query statement below
 SELECT product_id
-FROM products
-WHERE (low_fats = 'Y'
-AND recyclable = 'Y');
+FROM Products
+WHERE (
+    low_fats IN ('Y') 
+    AND recyclable IN ('Y') 
+);
